@@ -13,16 +13,15 @@
             box-sizing: border-box;
         }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.25rem !important; /* 20px - Force the size with !important */
-    line-height: 1.75;
-    color: #333;
-    /* Ensure consistent rendering across browsers */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25rem;
+            line-height: 1.75;
+            color: #333;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+        }
 
         .profile-pic {
             width: 180px;
@@ -102,6 +101,7 @@ body {
             color: white;
             padding: 2rem;
             max-width: 900px;
+            width: 100%;
         }
 
         .slide-content h1 {
@@ -131,7 +131,7 @@ body {
 
         .slide-content p {
             font-family: 'Poppins', sans-serif;
-            font-size: 1.4rem; /* Increased from 1.2rem */
+            font-size: 1.4rem;
             font-weight: 400;
             margin-bottom: 1rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
@@ -140,7 +140,7 @@ body {
         }
 
         .slide-content .subtitle {
-            font-size: 1.3rem; /* Increased from 1.1rem */
+            font-size: 1.3rem;
             font-weight: 300;
             opacity: 0.95;
             margin-bottom: 2rem;
@@ -268,7 +268,7 @@ body {
             color: white;
             text-decoration: none;
             font-weight: 500;
-            font-size: 16px; /* Increased from 14px */
+            font-size: 16px;
             letter-spacing: 0.5px;
             border-radius: 25px;
             transition: all 0.3s ease;
@@ -324,10 +324,11 @@ body {
             border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.2);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            width: 100%;
         }
 
         .intro {
-            font-size: 2.4rem; /* Increased from 2.2rem */
+            font-size: 2.4rem;
             margin-bottom: 30px;
             font-weight: 600;
             color: #ffffff;
@@ -340,7 +341,7 @@ body {
         }
 
         .about-text {
-            font-size: 1.3rem; /* Increased from 1.1rem */
+            font-size: 1.3rem;
             line-height: 1.8;
             color: #f8f9fa;
             margin-bottom: 20px;
@@ -350,7 +351,7 @@ body {
         /* Education Section */
         .edu-section, .highlight-section {
             background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-            padding: 80px 10%;
+            padding: 80px 20px;
             color: white;
             min-height: 100vh;
             display: flex;
@@ -388,7 +389,7 @@ body {
 
         .edu-entry h3 {
             color: white;
-            font-size: 2rem; /* Increased from 1.8rem */
+            font-size: 2rem;
             margin-bottom: 15px;
             display: flex;
             align-items: center;
@@ -396,7 +397,7 @@ body {
         }
 
         .edu-entry p, .edu-entry li {
-            font-size: 1.3rem; /* Increased from 1.1rem */
+            font-size: 1.3rem;
             line-height: 1.8;
             margin: 8px 0;
             color: #f1f3f4;
@@ -413,96 +414,77 @@ body {
             }
         }
 
-/* Skills Section - Fixed Version */
-.skills-section {
-    padding: 100px 20px; /* Added horizontal padding */
-    background: linear-gradient(135deg, #6d33a7 0%, #667eea 100%);
-    max-width: 100%; /* Ensure section doesn't exceed viewport */
-    overflow-x: hidden; /* Prevent horizontal overflow */
-}
+        /* Skills Section - Fixed Version */
+        .skills-section {
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #6d33a7 0%, #667eea 100%);
+            max-width: 100%;
+            overflow-x: hidden;
+        }
 
-/* Container to constrain content width */
-.skills-container {
-    max-width: 1200px; /* Set maximum width */
-    margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Add padding for mobile */
-}
+        .skills-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly larger min-width */
-    gap: 30px;
-    margin-top: 50px;
-    width: 100%; /* Ensure grid takes full container width */
-    box-sizing: border-box; /* Include padding in width calculation */
-}
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+            width: 100%;
+            box-sizing: border-box;
+        }
 
-.skill-card {
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-    border: 1px solid rgba(255,255,255,0.2);
-    transition: transform 0.3s ease;
-    box-sizing: border-box; /* Include padding in width calculation */
-    max-width: 100%; /* Prevent cards from exceeding container */
-}
+        .skill-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+            box-sizing: border-box;
+            max-width: 100%;
+        }
 
-.skill-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-}
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
 
-.skill-icon {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: rgb(29, 2, 43);
-}
+        .skill-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: rgb(29, 2, 43);
+        }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .skills-section {
-        padding: 60px 15px;
-    }
-    
-    .skills-container {
-        padding: 0 15px;
-    }
-    
-    .skills-grid {
-        grid-template-columns: 1fr; /* Single column on mobile */
-        gap: 20px;
-        margin-top: 30px;
-    }
-    
-    .skill-card {
-        padding: 25px;
-    }
-}
+        .skill-title {
+            color: white;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
 
-@media (max-width: 480px) {
-    .skills-section {
-        padding: 40px 10px;
-    }
-    
-    .skills-container {
-        padding: 0 10px;
-    }
-    
-    .skill-card {
-        padding: 20px;
-    }
-    
-    .skill-icon {
-        font-size: 2.5rem;
-    }
-}
+        .skill-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .skill-badge {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
 
         /* Experience Section */
         #experience {
             background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-            padding: 80px 10%;
+            padding: 80px 20px;
             color: white;
             min-height: 100vh;
         }
@@ -535,7 +517,7 @@ body {
         }
 
         .experience-date {
-            font-size: 1.4rem; /* Increased from 1.2rem */
+            font-size: 1.4rem;
             color: #f1f3f4;
             margin: -5px 0 20px 0;
             font-style: italic;
@@ -543,7 +525,7 @@ body {
         }
 
         .experience-entry h3 {
-            font-size: 2.2rem; /* Increased from 2rem */
+            font-size: 2.2rem;
             color: white;
             margin-bottom: 15px;
             display: flex;
@@ -558,7 +540,7 @@ body {
         .experience-entry li {
             color: #f1f3f4;
             margin-bottom: 10px;
-            font-size: 1.3rem; /* Increased from 1.1rem */
+            font-size: 1.3rem;
             line-height: 1.6;
         }
 
@@ -595,7 +577,7 @@ body {
             display: inline-flex;
             align-items: center;
             font-weight: 600;
-            font-size: 1.3rem; /* Increased from 1.1rem */
+            font-size: 1.3rem;
             color: white;
             text-decoration: none;
             padding: 18px 30px;
@@ -628,7 +610,7 @@ body {
         }
 
         .contact-footer {
-            font-size: 1.4rem; /* Increased from 1.2rem */
+            font-size: 1.4rem;
             color: #f1f3f4;
             text-align: center;
             margin: 30px 0;
@@ -649,59 +631,13 @@ body {
         .section-subtitle {
             text-align: center;
             color: rgba(255, 255, 255, 0.9);
-            font-size: 1.6rem; /* Increased from 1.4rem */
+            font-size: 1.6rem;
             font-weight: 300;
             margin-bottom: 60px;
             font-family: 'Poppins', sans-serif;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            body {
-                font-size: 18px; /* Reduced slightly for mobile but still larger than original */
-            }
-            
-            .slide-content p {
-                font-size: 1.2rem;
-            }
-            
-            .navbar {
-                position: fixed;
-                top: 15px;
-                transform: translateX(-50%);
-            }
-            
-            .nav-links {
-                display: flex;
-                gap: 2px;
-                list-style: none;
-                align-items: center;
-            }
-            
-            .nav-links a {
-                padding: 8px 12px;
-                font-size: 14px; /* Slightly larger than original for mobile */
-            }
-
-            .profile-pic {
-                width: 150px;
-                height: 150px;
-            }
-
-            .section-title {
-                font-size: 2.8rem;
-            }
-
-            .about-wrapper {
-                padding: 30px;
-            }
-
-            .intro {
-                font-size: 1.8rem;
-            }
         }
 
         /* Floating Animation */
@@ -726,6 +662,344 @@ body {
 
         .logo-img:hover {
             transform: scale(1.1);
+        }
+
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .slide-content h1 {
+                font-size: 4rem;
+            }
+            
+            .section-title {
+                font-size: 3rem;
+            }
+            
+            .intro {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 18px;
+            }
+            
+            .hero-section {
+                height: 100vh;
+            }
+            
+            .slide-content {
+                padding: 1.5rem;
+            }
+            
+            .slide-content h1 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+                letter-spacing: 1px;
+            }
+            
+            .slide-content p {
+                font-size: 1.1rem;
+                margin-bottom: 0.8rem;
+            }
+            
+            .slide-content .subtitle {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .cta-button {
+                padding: 14px 30px;
+                font-size: 1rem;
+            }
+            
+            .navbar {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                transform: none;
+                padding: 8px;
+                border-radius: 15px;
+                width: calc(100% - 20px);
+            }
+            
+            .nav-links {
+                display: flex;
+                justify-content: space-between;
+                gap: 2px;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+            }
+            
+            .nav-links a {
+                padding: 8px 10px;
+                font-size: 12px;
+                white-space: nowrap;
+                min-width: fit-content;
+            }
+
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 15px;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+                margin-bottom: 30px;
+            }
+            
+            .section-subtitle {
+                font-size: 1.2rem;
+                margin-bottom: 40px;
+            }
+
+            .about-wrapper {
+                padding: 30px 20px;
+                margin: 0 10px;
+            }
+
+            .intro {
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+            }
+            
+            .about-text {
+                font-size: 1.1rem;
+                text-align: center;
+            }
+            
+            .edu-section, .highlight-section {
+                padding: 60px 15px;
+            }
+            
+            .edu-entry {
+                padding: 25px 20px;
+                margin-bottom: 30px;
+            }
+            
+            .edu-entry h3 {
+                font-size: 1.5rem;
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            
+            .edu-entry p, .edu-entry li {
+                font-size: 1.1rem;
+            }
+            
+            .skills-section {
+                padding: 60px 15px;
+            }
+            
+            .skills-container {
+                padding: 0 10px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                margin-top: 30px;
+            }
+            
+            .skill-card {
+                padding: 25px 20px;
+            }
+            
+            .skill-title {
+                font-size: 1.4rem;
+            }
+            
+            .skill-badges {
+                gap: 8px;
+            }
+            
+            #experience {
+                padding: 60px 15px;
+            }
+            
+            .experience-entry {
+                padding: 25px 20px;
+                margin-bottom: 30px;
+            }
+            
+            .experience-entry h3 {
+                font-size: 1.6rem;
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            
+            .experience-date {
+                font-size: 1.1rem;
+                text-align: center;
+            }
+            
+            .experience-entry li {
+                font-size: 1.1rem;
+            }
+            
+            .contact-section {
+                padding: 60px 15px;
+            }
+            
+            .contact-section h2 {
+                font-size: 2.5rem;
+                margin-bottom: 30px;
+            }
+            
+            .contact-link {
+                min-width: 280px;
+                padding: 15px 25px;
+                font-size: 1.1rem;
+            }
+            
+            .contact-footer {
+                font-size: 1.1rem;
+            }
+            
+            .slider-nav {
+                font-size: 1.5rem;
+                padding: 10px 15px;
+            }
+            
+            .prev {
+                left: 10px;
+            }
+            
+            .next {
+                right: 10px;
+            }
+            
+            .slider-dots {
+                bottom: 20px;
+                gap: 8px;
+            }
+            
+            .dot {
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 16px;
+            }
+            
+            .slide-content h1 {
+                font-size: 2rem;
+            }
+            
+            .slide-content p {
+                font-size: 1rem;
+            }
+            
+            .slide-content .subtitle {
+                font-size: 0.9rem;
+            }
+            
+            .cta-button {
+                padding: 12px 25px;
+                font-size: 0.9rem;
+            }
+            
+            .nav-links a {
+                padding: 6px 8px;
+                font-size: 11px;
+            }
+            
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .about-wrapper {
+                padding: 20px 15px;
+            }
+            
+            .intro {
+                font-size: 1.5rem;
+            }
+            
+            .about-text {
+                font-size: 1rem;
+            }
+            
+            .edu-entry h3 {
+                font-size: 1.3rem;
+            }
+            
+            .skill-icon {
+                font-size: 2.5rem;
+            }
+            
+            .skill-title {
+                font-size: 1.2rem;
+            }
+            
+            .experience-entry h3 {
+                font-size: 1.4rem;
+            }
+            
+            .contact-link {
+                min-width: 250px;
+                font-size: 1rem;
+            }
+            
+            .slider-nav {
+                display: none;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .nav-links a {
+                padding: 5px 6px;
+                font-size: 10px;
+            }
+            
+            .contact-link {
+                min-width: 220px;
+            }
+        }
+
+        /* Landscape orientation fixes */
+        @media (orientation: landscape) and (max-height: 500px) {
+            .hero-section {
+                height: auto;
+                min-height: 100vh;
+                padding: 60px 0;
+            }
+            
+            .slide-content {
+                padding: 1rem;
+            }
+            
+            .slide-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .profile-pic {
+                width: 80px;
+                height: 80px;
+            }
         }
     </style>
 </head>
@@ -767,14 +1041,14 @@ body {
             </div>
 
             <!-- Slide 3 -->
-<div class="slide" style="background-image: url('https://images.unsplash.com/photo-1580894908360-7f382a95f5c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');">
-    <div class="slide-content">
-        <h1 class="floating">Accomplished MBA Expert</h1>
-        <p>🎓 MBA in Marketing & Finance</p>
-        <p class="subtitle">Dual expertise equips me to optimize financial performance and enhance brand growth, delivering data-driven and innovative solutions for business success.</p>
-        <button class="cta-button" onclick="scrollToSection('experience')">My Experience</button>
-    </div>
-</div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1580894908360-7f382a95f5c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');">
+                <div class="slide-content">
+                    <h1 class="floating">Accomplished MBA Expert</h1>
+                    <p>🎓 MBA in Marketing & Finance</p>
+                    <p class="subtitle">Dual expertise equips me to optimize financial performance and enhance brand growth, delivering data-driven and innovative solutions for business success.</p>
+                    <button class="cta-button" onclick="scrollToSection('experience')">My Experience</button>
+                </div>
+            </div>
 
             <!-- Slide 4 -->
             <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1605902711622-cfb43c44367e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');">
@@ -815,47 +1089,46 @@ body {
         </div>
     </section>
 
-<!-- Education Section -->
-<section id="education" class="highlight-section">
-    <h2>Education</h2>
+    <!-- Education Section -->
+    <section id="education" class="highlight-section">
+        <h2>Education</h2>
 
-    <div class="edu-entry">
-        <h3 style="justify-content: center;">
-            <img src="logos/lpu.png" alt="LPU Logo" class="logo-img">
-            MBA
-        </h3>
-        <p><strong>Institution:</strong> Lovely Professional University</p>
-        <p><strong>Specialization:</strong> Finance and Marketing</p>
-        <p><strong>Duration:</strong> 2020 - 2022</p>
-        <p>Imagine an MBA super-girl with dual powers in Finance and Marketing—that's me! With a solid foundation built from both undergrad and grad studies, I've mastered the art of crunching numbers and crafting killer marketing strategies. Whether it's boosting the bottom line or making your brand shine, I've got the skills to make your business soar!</p>
-    </div>
-</section>
+        <div class="edu-entry">
+            <h3 style="justify-content: center;">
+                <img src="logos/lpu.png" alt="LPU Logo" class="logo-img">
+                MBA
+            </h3>
+            <p><strong>Institution:</strong> Lovely Professional University</p>
+            <p><strong>Specialization:</strong> Finance and Marketing</p>
+            <p><strong>Duration:</strong> 2020 - 2022</p>
+            <p>Imagine an MBA super-girl with dual powers in Finance and Marketing—that's me! With a solid foundation built from both undergrad and grad studies, I've mastered the art of crunching numbers and crafting killer marketing strategies. Whether it's boosting the bottom line or making your brand shine, I've got the skills to make your business soar!</p>
+        </div>
+    </section>
 
     <!-- Skills Section -->
-     <section class="skills-section" id="skills">
-        <div class="container">
+    <section class="skills-section" id="skills">
+        <div class="skills-container">
             <h2 class="section-title">My Expertise</h2>
             <p class="section-subtitle">Professional skills and competencies I bring to the table</p>
             
             <div class="skills-grid">
-                <!-- Languages -->
+                <!-- Financial Acumen -->
                 <div class="skill-card">
                     <div class="skill-icon">💰</div>
                     <h3 class="skill-title">Financial Acumen</h3>
                     <div class="skill-badges">
                         <img src="https://img.shields.io/badge/Revenue_Recognition-4CAF50?style=for-the-badge&logo=analytics&logoColor=white" alt="Revenue Recognition" class="skill-badge">
                         <img src="https://img.shields.io/badge/Financial_Accounting-2196F3?style=for-the-badge&logo=calculator&logoColor=white" alt="Financial Accounting" class="skill-badge">
-    <img src="https://img.shields.io/badge/Account_Reconciliation-607D8B?style=for-the-badge&logo=balance&logoColor=white" alt="Account Reconciliation" class="skill-badge">
-    <img src="https://img.shields.io/badge/US_GAAP-FF7043?style=for-the-badge&logo=law&logoColor=white" alt="US GAAP" class="skill-badge">
-    <img src="https://img.shields.io/badge/Accounts_Receivable_(AR)-EF6C00?style=for-the-badge&logo=handshake&logoColor=white" alt="Accounts Receivable" class="skill-badge">
-    <img src="https://img.shields.io/badge/Contract_Review-9C27B0?style=for-the-badge&logo=file-text&logoColor=white" alt="Contract Review" class="skill-badge">
-    <!-- New badges below -->
-    <img src="https://img.shields.io/badge/IT_System_Enhancement-795548?style=for-the-badge&logo=server&logoColor=white" alt="IT System Enhancement" class="skill-badge">
-    <img src="https://img.shields.io/badge/Analytics_&_Reporting-3F51B5?style=for-the-badge&logo=bar-chart&logoColor=white" alt="Analytics and Reporting" class="skill-badge">
-    <img src="https://img.shields.io/badge/Revenue_Optimization-009688?style=for-the-badge&logo=money&logoColor=white" alt="Revenue Optimization" class="skill-badge">
-    <img src="https://img.shields.io/badge/Flux_Analysis-FF5722?style=for-the-badge&logo=line-chart&logoColor=white" alt="Flux Analysis" class="skill-badge">
-</div>
-</div>
+                        <img src="https://img.shields.io/badge/Account_Reconciliation-607D8B?style=for-the-badge&logo=balance&logoColor=white" alt="Account Reconciliation" class="skill-badge">
+                        <img src="https://img.shields.io/badge/US_GAAP-FF7043?style=for-the-badge&logo=law&logoColor=white" alt="US GAAP" class="skill-badge">
+                        <img src="https://img.shields.io/badge/Accounts_Receivable_(AR)-EF6C00?style=for-the-badge&logo=handshake&logoColor=white" alt="Accounts Receivable" class="skill-badge">
+                        <img src="https://img.shields.io/badge/Contract_Review-9C27B0?style=for-the-badge&logo=file-text&logoColor=white" alt="Contract Review" class="skill-badge">
+                        <img src="https://img.shields.io/badge/IT_System_Enhancement-795548?style=for-the-badge&logo=server&logoColor=white" alt="IT System Enhancement" class="skill-badge">
+                        <img src="https://img.shields.io/badge/Analytics_&_Reporting-3F51B5?style=for-the-badge&logo=bar-chart&logoColor=white" alt="Analytics and Reporting" class="skill-badge">
+                        <img src="https://img.shields.io/badge/Revenue_Optimization-009688?style=for-the-badge&logo=money&logoColor=white" alt="Revenue Optimization" class="skill-badge">
+                        <img src="https://img.shields.io/badge/Flux_Analysis-FF5722?style=for-the-badge&logo=line-chart&logoColor=white" alt="Flux Analysis" class="skill-badge">
+                    </div>
+                </div>
 
                 <!-- Technical Tools -->
                 <div class="skill-card">
@@ -1049,9 +1322,9 @@ body {
                 });
             });
 
-          setInterval(() => {
-    nextSlide();
-}, 9000);
+            setInterval(() => {
+                nextSlide();
+            }, 9000);
         });
     </script>
 </body>
